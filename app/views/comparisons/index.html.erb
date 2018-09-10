@@ -1,0 +1,6 @@
+Let's check!
+
+<%= form_for :compare, url: "comparisons/compare", html: { method: :get } do |form| %>
+  <%= form.text_field :ingredient_list %>
+  <%= form.submit  %>
+<% end  %>

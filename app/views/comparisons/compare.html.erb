@@ -1,0 +1,12 @@
+<h4>You have <%= @match_count %> matches</h4>
+<% @name_array.each.with_index(1) do |element, i| %>
+  <%= i %>.
+  <% if element[:match] %>
+    <b><%= element[:original] %></b>
+  <% else %>
+    <%= element[:original] %>
+  <% end %>
+  <br />
+<% end %>
+<br />
+<%= link_to "New Search", root_path %>
